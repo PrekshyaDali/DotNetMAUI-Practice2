@@ -12,3 +12,4 @@
         <lvc:CartesianChart HeightRequest ="500" WidthRequest ="500"  Series="{Binding Series}" Title="{Binding Title}" />
     </VerticalStackLayout>
 </ContentPage>
+    
