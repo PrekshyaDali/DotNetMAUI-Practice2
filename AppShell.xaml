@@ -21,5 +21,14 @@
      ContentTemplate="{DataTemplate views:PieChartPage}"
      Route="PieChartPage" />
     </FlyoutItem>
-
+    <FlyoutItem Title="LineGraph page">
+        <ShellContent
+   ContentTemplate="{DataTemplate views:LineGraphPage}"
+   Route="LineGraphPage" />
+    </FlyoutItem>
+    <FlyoutItem Title="CustomGraph page">
+        <ShellContent
+ ContentTemplate="{DataTemplate views:CustomGraphPage}"
+ Route="CustomGraphPage" />
+    </FlyoutItem>
 </Shell>

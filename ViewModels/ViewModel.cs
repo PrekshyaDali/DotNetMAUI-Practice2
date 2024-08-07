@@ -12,12 +12,12 @@ public partial class ViewModel : ObservableObject
     {
         new ColumnSeries<double>
         {
-            Name = "Mary",
+            Name = "Prekshya",
             Values = new double[] { 2, 5, 4 }
         },
         new ColumnSeries<double>
         {
-            Name = "Ana",
+            Name = "Sijan",
             Values = new double[] { 3, 1, 6 }
         }
     };

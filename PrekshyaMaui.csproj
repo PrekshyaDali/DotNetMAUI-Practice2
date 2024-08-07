@@ -70,6 +70,12 @@
 	  <MauiXaml Update="Views\BarGraphPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	  <MauiXaml Update="Views\CustomGraphPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\LineGraphPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="Views\PieChartPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
