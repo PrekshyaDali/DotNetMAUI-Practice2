@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PrekshyaMaui.Views.PieChartPage"
+              xmlns:lvc="clr-namespace:LiveChartsCore.SkiaSharpView.Maui;assembly=LiveChartsCore.SkiaSharpView.Maui"
+             xmlns:vms="clr-namespace:PrekshyaMaui.ViewModels"
+             Title="PieChartPage">
+    <ContentPage.BindingContext>
+        <vms:PiechartViewModel/>
+    </ContentPage.BindingContext>
+    <VerticalStackLayout>
+        <lvc:PieChart
+        HeightRequest ="500"
+        WidthRequest="500"
+        Series="{Binding Series}"
+        Title="{Binding Title}">
+        </lvc:PieChart>
+    </VerticalStackLayout>
+</ContentPage>
