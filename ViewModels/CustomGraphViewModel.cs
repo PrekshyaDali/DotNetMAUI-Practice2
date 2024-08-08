@@ -31,32 +31,32 @@ namespace PrekshyaMaui.ViewModels
         }
     };
 
-        public Axis[] XAxes { get; set; } =
-        {
+    public Axis[] XAxes { get; set; } =
+    {
         new Axis
-        {
+            {
             Name = "Categories", 
             Labels = new string[] { "Category 1", "Category 2", "Category 3" },
             LabelsRotation = 15, 
             SeparatorsPaint = new SolidColorPaint(new SKColor(200, 200, 200)),
             TicksPaint = new SolidColorPaint(new SKColor(35, 35, 35)),
             NamePaint = new SolidColorPaint(SKColors.Blue), 
-            Labeler = value => "Label " + value 
-        }
+            Labeler = value => "Label " + value
+            }
     };
 
-        public Axis[] YAxes { get; set; } =
-        {
-        new Axis
-        {
+    public Axis[] YAxes { get; set; } =
+    {
+         new Axis
+         {
             // Customize axis title paint
             NamePaint = new SolidColorPaint(SKColors.Blue), 
             // Custom label formatter
             Labeler = value => value.ToString("N") 
-        }
-    };
+         }
+    }; 
 
-        public LabelVisual Title { get; set; } =
+    public LabelVisual Title { get; set; } =
           new LabelVisual
           {
               Text = "My custom title",
