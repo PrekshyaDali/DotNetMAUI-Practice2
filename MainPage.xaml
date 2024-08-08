@@ -26,7 +26,7 @@
 
             <Button
                 x:Name="CounterBtn"
-                AccessibilityId="ClickMeButtonId"
+                AutomationId="ClickMeButtonId"
                 Text="Click me" 
                 SemanticProperties.Hint="Counts the number of times you click"
                 Clicked="OnCounterClicked"

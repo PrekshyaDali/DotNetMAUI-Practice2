@@ -361,3 +361,10 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+
+# UI and NUnit test projects (ensure these are not ignored)
+!UITests/
+!UITests.Shared/
+!UITests.Windows/
+!*.csproj
+!*.sln
