@@ -4,31 +4,27 @@
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:PrekshyaMaui"
-    Shell.FlyoutBehavior="Flyout"
     xmlns:views="clr-namespace:PrekshyaMaui.Views"
-    Title="PrekshyaMaui">
+    Title="PrekshyaMaui"
+    Shell.FlyoutBehavior="Flyout">
 
-    <ShellContent
-        ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" />
+    <ShellContent ContentTemplate="{DataTemplate local:MainPage}" Route="MainPage" />
     <FlyoutItem Title="Graph page">
-        <ShellContent
-        ContentTemplate="{DataTemplate views:BarGraphPage}"
-        Route="BarGraphPage" />
+        <ShellContent ContentTemplate="{DataTemplate views:BarGraphPage}" Route="BarGraphPage" />
     </FlyoutItem>
     <FlyoutItem Title="Pie page">
-        <ShellContent
-     ContentTemplate="{DataTemplate views:PieChartPage}"
-     Route="PieChartPage" />
+        <ShellContent ContentTemplate="{DataTemplate views:PieChartPage}" Route="PieChartPage" />
     </FlyoutItem>
     <FlyoutItem Title="LineGraph page">
-        <ShellContent
-   ContentTemplate="{DataTemplate views:LineGraphPage}"
-   Route="LineGraphPage" />
+        <ShellContent ContentTemplate="{DataTemplate views:LineGraphPage}" Route="LineGraphPage" />
     </FlyoutItem>
     <FlyoutItem Title="CustomGraph page">
-        <ShellContent
- ContentTemplate="{DataTemplate views:CustomGraphPage}"
- Route="CustomGraphPage" />
+        <ShellContent ContentTemplate="{DataTemplate views:CustomGraphPage}" Route="CustomGraphPage" />
+    </FlyoutItem>
+    <FlyoutItem Title="Assignment page">
+        <ShellContent ContentTemplate="{DataTemplate views:PersonalInformation}" Route="PersonalInformation" />
+    </FlyoutItem>
+    <FlyoutItem Title="Assignment page 3 layout">
+        <ShellContent ContentTemplate="{DataTemplate views:CompanyViewPage}" Route="CompanyViewPage" />
     </FlyoutItem>
 </Shell>
