@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="PrekshyaMaui.Views.ViewInputContentView"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:controls="clr-namespace:PrekshyaMaui.Views"
+    Title="ViewInputContentView">
+    <VerticalStackLayout>
+        <controls:InputContentView FirstName="{Binding FirstName}" LastName="{Binding LastName}" />
+        <Frame>
+            <VerticalStackLayout>
+                <Label Text="this is your first name" />
+                <Label Text="" />
+            </VerticalStackLayout>
+        </Frame>
+        <Frame>
+            <VerticalStackLayout>
+                <Label Text="This is your lastname" />
+                <Label Text="" />
+            </VerticalStackLayout>
+        </Frame>
+    </VerticalStackLayout>
+</ContentPage>

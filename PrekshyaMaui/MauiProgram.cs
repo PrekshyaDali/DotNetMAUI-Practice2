@@ -1,6 +1,6 @@
 ﻿using Microsoft.Extensions.Logging;
 using SkiaSharp.Views.Maui.Controls.Hosting;
-
+using CommunityToolkit.Maui;
 namespace PrekshyaMaui
 {
     public static class MauiProgram
@@ -9,6 +9,7 @@ namespace PrekshyaMaui
         {
             var builder = MauiApp.CreateBuilder();
             builder
+                .UseMauiCommunityToolkit()
                 .UseMauiApp<App>()
                 .UseSkiaSharp(true)
                 .ConfigureFonts(fonts =>
@@ -18,7 +19,7 @@ namespace PrekshyaMaui
                 });
 
 #if DEBUG
-    		builder.Logging.AddDebug();
+            builder.Logging.AddDebug();
 #endif
 
             return builder.Build();

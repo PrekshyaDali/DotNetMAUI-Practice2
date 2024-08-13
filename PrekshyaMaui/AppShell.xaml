@@ -27,4 +27,7 @@
     <FlyoutItem Title="Assignment page 3 layout">
         <ShellContent ContentTemplate="{DataTemplate views:CompanyViewPage}" Route="CompanyViewPage" />
     </FlyoutItem>
+    <FlyoutItem Title="Expander with Collection View">
+        <ShellContent ContentTemplate="{DataTemplate views:ExpanderWithCollectionView}" Route="ExpanderWithCollectionView" />
+    </FlyoutItem>
 </Shell>

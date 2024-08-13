@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentView
+    x:Class="PrekshyaMaui.Views.InputContentView"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+    <HorizontalStackLayout Spacing="10">
+        <VerticalStackLayout>
+            <Label Text="First Name" />
+            <Entry Text="{Binding FirstName, FallbackValue='Prekshya'}" />
+        </VerticalStackLayout>
+        <VerticalStackLayout>
+            <Label Text="Last Name" />
+            <Entry Text="{Binding LastName, FallbackValue='Dali'}" />
+        </VerticalStackLayout>
+    </HorizontalStackLayout>
+</ContentView>

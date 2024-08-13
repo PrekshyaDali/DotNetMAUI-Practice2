@@ -57,11 +57,8 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <Compile Remove="Views\CompanyViewPage.xaml.cs" />
-	</ItemGroup>
-
-	<ItemGroup>
 		<PackageReference Include="Appium.WebDriver" Version="5.1.0" />
+		<PackageReference Include="CommunityToolkit.Maui" Version="9.0.2" />
 		<PackageReference Include="CommunityToolkit.Mvvm" Version="8.2.2" />
 		<PackageReference Include="FluentAssertions" Version="7.0.0-alpha.4" />
 		<PackageReference Include="LiveChartsCore.SkiaSharpView.Maui" Version="2.0.0-rc2" />
@@ -82,6 +79,9 @@
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Views\CustomGraphPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\ExpanderWithCollectionView.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Views\LineGraphPage.xaml">
