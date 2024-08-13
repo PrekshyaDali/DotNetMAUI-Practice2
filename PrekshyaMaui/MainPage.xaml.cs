@@ -19,10 +19,6 @@
                 CounterBtn.Text = $"Clicked {count} times";
 
             SemanticScreenReader.Announce(CounterBtn.Text);
-            //await CrossFirebaseCloudMessaging.Current.CheckIfValidAsync();
-            //var token = await CrossFireBaseCloudMessaging.Current.GetTokenAsync();
-            //Console.WriteLine($"FCM token: {token}");
         }
     }
-
 }

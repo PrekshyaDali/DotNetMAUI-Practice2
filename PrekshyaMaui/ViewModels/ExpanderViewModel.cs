@@ -28,4 +28,3 @@ namespace PrekshyaMaui.ViewModels
         public string Description { get; set; }
     }
 }
-
