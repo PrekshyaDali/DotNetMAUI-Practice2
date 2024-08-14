@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="PushNotification.Views.ItemViewPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:vm="clr-namespace:PushNotification.ViewModels"
+    Title="ItemViewModel">
+    <ContentPage.BindingContext>
+        <vm:ItemViewModel />
+    </ContentPage.BindingContext>
+    <StackLayout Padding="20">
+        <!--  CollectionView with CheckBoxes  -->
+        <CollectionView ItemsSource="{Binding Items}">
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <StackLayout Padding="10" Orientation="Horizontal">
+                        <CheckBox IsChecked="{Binding IsChecked, Mode=TwoWay}" />
+                        <Label Text="{Binding Name}" VerticalOptions="Center" />
+                    </StackLayout>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+
+        <!--  Label showing the count of checked items  -->
+        <Label
+            FontSize="Medium"
+            HorizontalOptions="Center"
+            Text="{Binding CheckedCount, StringFormat='Checked Items: {0}'}"
+            VerticalOptions="Center" />
+    </StackLayout>
+</ContentPage>
